@@ -38,6 +38,7 @@ h3{font-size:22px;margin-bottom:7px}
 .plain-list li{padding:7px 0;border-bottom:1px solid var(--line)}
 .aside-note{font-size:14px;color:var(--muted);margin:18px 0 0}
 .section{padding:75px 0}
+section[id]{scroll-margin-top:110px}
 .section-alt{background:var(--tint);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .section-title{margin-bottom:30px}
 .section-title h2{margin-bottom:0}
@@ -55,6 +56,10 @@ h3{font-size:22px;margin-bottom:7px}
 .experience-grid article p:last-child{color:var(--muted);margin-bottom:0}
 .item-label{font-size:14px;margin-bottom:12px}
 .project-list{border-top:1px solid var(--line)}
+.research-list{border-top:1px solid var(--line)}
+.research-entry{padding:24px 0;border-bottom:1px solid var(--line)}
+.research-entry h3{max-width:940px;line-height:1.4;margin-bottom:8px}
+.research-entry p{margin:0;color:var(--muted);font-style:italic}
 details{border-bottom:1px solid var(--line)}
 summary{display:grid;grid-template-columns:minmax(0,1fr) 250px 24px;align-items:center;gap:24px;position:relative;padding:20px 0;cursor:pointer;list-style:none;color:var(--navy);font-size:21px;text-align:left}
 summary::-webkit-details-marker{display:none}
@@ -72,6 +77,9 @@ summary em{font-style:normal;font-size:14px;color:var(--muted);white-space:norma
 .project-media-single{grid-template-columns:minmax(0,1fr);max-width:560px}
 .project-media-single img{height:auto;max-height:300px;object-fit:contain}
 .project-media figcaption{margin-top:6px;color:var(--muted);font-size:13px;line-height:1.35}
+.substation-photos img{height:340px;max-height:none;object-fit:contain}
+.project-videos video{display:block;width:100%;aspect-ratio:16/9;object-fit:contain;background:#111;border:1px solid var(--line)}
+.project-videos video:focus-visible{outline:2px solid var(--navy);outline-offset:3px}
 .two-column{display:block}
 .two-column>div+div{margin-top:56px}
 .record-list{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
@@ -97,6 +105,7 @@ summary em{font-style:normal;font-size:14px;color:var(--muted);white-space:norma
   .experience-grid,.two-column,.contact-inner{grid-template-columns:1fr;gap:42px}
 }
 @media(max-width:600px){
+  section[id]{scroll-margin-top:160px}
   .shell{width:min(var(--max),calc(100% - 36px))}
   .header-inner{display:block}
   .site-name{display:block;margin-bottom:10px}
